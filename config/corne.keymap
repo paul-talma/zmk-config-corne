@@ -35,26 +35,26 @@
 // | SHFT |     |     |     |     |     |   |  1  |  2  |  3  |  0  |     | LCTRL|
 //                    | ALT |     | GUI |   | SPC |     | ENT |
                         bindings = <
-   &kp TAB    &kp GRAVE   &trans   &kp LBKT  &kp RBKT   &trans         &kp N7   &kp N8   &kp N9 &trans    &trans &kp BSPC
-   &bt ESC    &trans   &trans   &kp LPAR  &kp RPAR   &trans         &kp N4 &kp N5 &kp N6 &kp BSLH &trans &trans
-   &kp LSHFT  &trans   &trans   &trans    &trans     &trans         &kp N1   &kp N2   &kp N3 &kp N0    &trans &kp LCTRL
-                           &kp LALT     &trans       &kp LGUI      &kp SPACE  &trans   &kp RET
+   &kp TAB    &kp GRAVE &trans  &kp LBKT  &kp RBKT  &trans     &kp N7    &kp N8  &kp N9  &trans   &trans &kp BSPC
+   &bt ESC    &trans    &trans  &kp LPAR  &kp RPAR  &trans     &kp N4    &kp N5  &kp N6  &kp BSLH &trans &trans
+   &kp LSHFT  &trans    &trans  &trans    &trans    &trans     &kp N1    &kp N2  &kp N3  &kp N0   &trans &kp LCTRL
+                                &kp LALT  &trans    &kp LGUI   &kp SPACE &trans  &kp RET
                         >;
                 };
 
                 raise_layer {
-												display_name = "Control";
+												display_name = "Ctrl";
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |PLAY/PAUSE|PREV |NEXT|     |   |     | HOME| PG_DOWN | PG_UP | END  | BSPC |
-// | CTRL |     |MUTE |VOL_DW|VOL_UP|     |   |     | LEFT| DOWN    | UP    | RIGHT|     | 
-// | SHFT |     |     |SCREEN_UP|SCREEN_DW|     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  TAB |     | P/P |PREV |NEXT |     |   |     | HOME|PG_DN|PG_UP| END | BSPC |
+// |  ESC |     |MUTE |VOLDN|VOLUP|     |   |     | LEFT|DOWN | UP  |RIGHT|      | 
+// | SHFT |     |     |SCRUP|SCRDW|     |   |     |     |     |     |     |      |
+//                    | ALT |     | GUI |   | SPC |     | ENT |
                         bindings = <
-   &kp  TAB  &trans &kp C_PP &kp C_PREV &kp C_NEXT &trans   &trans &kp HOME  &kp PG_DN &kp PG_UP &kp END &kp BSPC
-   &kp ESC &trans &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP   &trans   &trans      &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans 
-   &kp LSHFT &trans   &trans &kp C_BRI_DN   &kp C_BRI_UP   &trans      &trans &trans  &trans  &trans &trans &trans
-                             &kp LALT &trans   &kp LGUI   &kp SPACE   &trans    &kp RALT
-                        >;
+   &kp TAB   &trans &kp C_PP   &kp C_PREV   &kp C_NEXT   &trans     &trans    &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp BSPC
+   &kp ESC   &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans     &trans    &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans 
+   &kp LSHFT &trans &trans     &kp C_BRI_DN &kp C_BRI_UP &trans     &trans    &trans   &trans    &trans    &trans    &trans
+                               &kp LALT     &trans       &kp LGUI   &kp SPACE &trans   &kp RALT
+                        >
                 };
 
         };
